@@ -1,0 +1,605 @@
+[0m17:27:20.437687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024666119990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246650EE500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246650EF910>]}
+
+
+============================== 17:27:20.459857 | b584e12e-70fd-4c67-9bee-d73700a088ca ==============================
+[0m17:27:20.459857 [info ] [MainThread]: Running with dbt=1.8.3
+[0m17:27:20.460859 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init dbt_demo', 'send_anonymous_usage_stats': 'True'}
+[0m17:27:20.472366 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/ELYADATA/.dbt')}
+[0m17:27:20.473367 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m17:27:20.476451 [debug] [MainThread]: Starter project path: c:\users\elyadata\appdata\local\programs\python\python310\lib\site-packages\dbt\include\starter_project
+[0m17:27:20.489971 [info ] [MainThread]: 
+Your new dbt project "dbt_demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:27:20.492017 [info ] [MainThread]: Setting up your profile.
+[0m17:27:20.493015 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m17:27:20.496711 [debug] [MainThread]: Command `dbt init` failed at 17:27:20.495697 after 0.15 seconds
+[0m17:27:20.497709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024666119990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024668A8F730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024665188490>]}
+[0m17:27:20.497709 [debug] [MainThread]: Flushing usage events
+[0m18:09:14.346539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BF138D5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BF03665F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BF03662C0>]}
+
+
+============================== 18:09:14.348585 | 72e782e6-4547-474a-8f9f-4a96ea6f285d ==============================
+[0m18:09:14.348585 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:09:14.350506 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:09:14.362581 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:09:14.363581 [info ] [MainThread]: python version: 3.10.11
+[0m18:09:14.363581 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:09:14.364592 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:09:14.366106 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 7
+  ------------------------------
+  4  |     dev:
+  5  |       type: snowflake
+  6  |       account:dfymtll 
+  7  |       user: NAHLA
+  8  |       password:Adminadmin123# 
+  9  |       role: ACCOUNTADMIN
+  10 |       database: SNOWFLAKE_SAMPLE_DATA
+  
+  Raw Error:
+  ------------------------------
+  while scanning a simple key
+    in "<unicode string>", line 6, column 7
+  could not find expected ':'
+    in "<unicode string>", line 7, column 7
+[0m18:09:14.368482 [debug] [MainThread]: Command `dbt debug` failed at 18:09:14.368482 after 0.06 seconds
+[0m18:09:14.369501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BF138D5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BF0412D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BF0412DA0>]}
+[0m18:09:14.369501 [debug] [MainThread]: Flushing usage events
+[0m18:09:37.626257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F9EC1D540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F9E3F63E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F9E3F6320>]}
+
+
+============================== 18:09:37.629258 | ea871538-199a-4a57-8d90-e80c3e8f9431 ==============================
+[0m18:09:37.629258 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:09:37.630257 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:09:37.641256 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:09:37.642257 [info ] [MainThread]: python version: 3.10.11
+[0m18:09:37.643258 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:09:37.644257 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:09:37.645257 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 9
+  ------------------------------
+  6  |       account: dfymtll 
+  7  |       user: NAHLA
+  8  |       password:Adminadmin123# 
+  9  |       role: ACCOUNTADMIN
+  10 |       database: SNOWFLAKE_SAMPLE_DATA
+  11 |       warehouse: COMPUTE_WH
+  12 |       schema: public
+  
+  Raw Error:
+  ------------------------------
+  while scanning a simple key
+    in "<unicode string>", line 8, column 7
+  could not find expected ':'
+    in "<unicode string>", line 9, column 7
+[0m18:09:37.649257 [debug] [MainThread]: Command `dbt debug` failed at 18:09:37.649257 after 0.06 seconds
+[0m18:09:37.650262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F9EC1D540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F9E49AC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F9E49AD10>]}
+[0m18:09:37.650262 [debug] [MainThread]: Flushing usage events
+[0m18:09:50.964899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35087D540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F34F857010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F34F857EB0>]}
+
+
+============================== 18:09:50.967901 | 43f1f4b9-0dab-4a4b-a55b-22a1e6832ed1 ==============================
+[0m18:09:50.967901 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:09:50.968338 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:09:50.978425 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:09:50.978866 [info ] [MainThread]: python version: 3.10.11
+[0m18:09:50.979884 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:09:50.980868 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:09:50.988271 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m18:09:50.989005 [info ] [MainThread]: Using profiles dir at C:\Users\ELYADATA\.dbt
+[0m18:09:50.990073 [info ] [MainThread]: Using profiles.yml file at C:\Users\ELYADATA\.dbt\profiles.yml
+[0m18:09:50.991077 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml
+[0m18:09:50.992075 [info ] [MainThread]: Configuration:
+[0m18:09:50.993116 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:09:50.994075 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:09:50.995076 [info ] [MainThread]: Required dependencies:
+[0m18:09:50.996085 [debug] [MainThread]: Executing "git --help"
+[0m18:09:51.040448 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:09:51.041525 [debug] [MainThread]: STDERR: "b''"
+[0m18:09:51.041525 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:09:51.042621 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:09:51.043623 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:09:51.044623 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "snowflake", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m18:09:51.046625 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml> not found
+
+[0m18:09:51.048623 [debug] [MainThread]: Command `dbt debug` failed at 18:09:51.048623 after 0.17 seconds
+[0m18:09:51.048623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35087D540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F34F8EA1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F34F8E8760>]}
+[0m18:09:51.049623 [debug] [MainThread]: Flushing usage events
+[0m18:11:14.288755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225EC1CD5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225EB9A70A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225EB9A7C40>]}
+
+
+============================== 18:11:14.291831 | 1b01e82d-0a8d-4277-b741-766442144c65 ==============================
+[0m18:11:14.291831 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:11:14.292841 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:11:14.303842 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:11:14.303842 [info ] [MainThread]: python version: 3.10.11
+[0m18:11:14.304840 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:11:14.304840 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:11:14.309831 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m18:11:14.309831 [info ] [MainThread]: Using profiles dir at C:\Users\ELYADATA\.dbt
+[0m18:11:14.310833 [info ] [MainThread]: Using profiles.yml file at C:\Users\ELYADATA\.dbt\profiles.yml
+[0m18:11:14.310833 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml
+[0m18:11:14.311802 [info ] [MainThread]: Configuration:
+[0m18:11:14.311802 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:11:14.312833 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:11:14.313755 [info ] [MainThread]: Required dependencies:
+[0m18:11:14.314840 [debug] [MainThread]: Executing "git --help"
+[0m18:11:14.360611 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:11:14.361613 [debug] [MainThread]: STDERR: "b''"
+[0m18:11:14.362616 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:11:14.363613 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:11:14.364625 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:11:14.365639 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "snowflake", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m18:11:14.367354 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml> not found
+
+[0m18:11:14.368335 [debug] [MainThread]: Command `dbt debug` failed at 18:11:14.368335 after 0.16 seconds
+[0m18:11:14.369415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225EC1CD5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225EBA3A800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225EBA386D0>]}
+[0m18:11:14.369415 [debug] [MainThread]: Flushing usage events
+[0m18:14:57.515819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552018D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002551F1670A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002551F167C40>]}
+
+
+============================== 18:14:57.520895 | 80dba6e6-fbc5-4a73-8b3f-a35fd63fa519 ==============================
+[0m18:14:57.520895 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:14:57.522879 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:14:57.535888 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:14:57.537878 [info ] [MainThread]: python version: 3.10.11
+[0m18:14:57.538919 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:14:57.539970 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:14:57.545965 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m18:14:57.547879 [info ] [MainThread]: Using profiles dir at C:\Users\ELYADATA\.dbt
+[0m18:14:57.547879 [info ] [MainThread]: Using profiles.yml file at C:\Users\ELYADATA\.dbt\profiles.yml
+[0m18:14:57.548879 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml
+[0m18:14:57.550910 [info ] [MainThread]: Configuration:
+[0m18:14:57.551885 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:14:57.552879 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:14:57.552879 [info ] [MainThread]: Required dependencies:
+[0m18:14:57.553883 [debug] [MainThread]: Executing "git --help"
+[0m18:14:57.608912 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:14:57.608912 [debug] [MainThread]: STDERR: "b''"
+[0m18:14:57.609974 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:14:57.610872 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:14:57.611874 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:14:57.612882 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "snowflake", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m18:14:57.614873 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml> not found
+
+[0m18:14:57.615874 [debug] [MainThread]: Command `dbt debug` failed at 18:14:57.615874 after 0.18 seconds
+[0m18:14:57.616874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552018D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002551F1FA800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002551F1F86D0>]}
+[0m18:14:57.617874 [debug] [MainThread]: Flushing usage events
+[0m18:15:20.716046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002620878D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262077670A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026207767C40>]}
+
+
+============================== 18:15:20.719123 | a785e36f-9c8a-4c78-a6a2-d67509642acb ==============================
+[0m18:15:20.719123 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:15:20.720080 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:15:20.730048 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:15:20.731046 [info ] [MainThread]: python version: 3.10.11
+[0m18:15:20.732046 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:15:20.732046 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:15:20.740122 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m18:15:20.741046 [info ] [MainThread]: Using profiles dir at C:\Users\ELYADATA\.dbt
+[0m18:15:20.742046 [info ] [MainThread]: Using profiles.yml file at C:\Users\ELYADATA\.dbt\profiles.yml
+[0m18:15:20.742046 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml
+[0m18:15:20.743047 [info ] [MainThread]: Configuration:
+[0m18:15:20.744046 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:15:20.744823 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:15:20.745836 [info ] [MainThread]: Required dependencies:
+[0m18:15:20.746828 [debug] [MainThread]: Executing "git --help"
+[0m18:15:20.794588 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:15:20.794588 [debug] [MainThread]: STDERR: "b''"
+[0m18:15:20.795673 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:15:20.796597 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:15:20.797599 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:15:20.797599 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "snowflake", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m18:15:20.799597 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml> not found
+
+[0m18:15:20.801597 [debug] [MainThread]: Command `dbt debug` failed at 18:15:20.801597 after 0.16 seconds
+[0m18:15:20.802600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002620878D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262077FA800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262077F86D0>]}
+[0m18:15:20.803632 [debug] [MainThread]: Flushing usage events
+[0m18:17:08.780785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D88B00D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D889FE70A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D889FE7C40>]}
+
+
+============================== 18:17:08.783838 | a0acad21-5ec2-48b1-a65f-0d0f23878536 ==============================
+[0m18:17:08.783838 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:17:08.784750 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:17:08.794750 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:17:08.795752 [info ] [MainThread]: python version: 3.10.11
+[0m18:17:08.796797 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:17:08.796797 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:17:08.801829 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m18:17:08.802750 [info ] [MainThread]: Using profiles dir at C:\Users\ELYADATA\.dbt
+[0m18:17:08.803751 [info ] [MainThread]: Using profiles.yml file at C:\Users\ELYADATA\.dbt\profiles.yml
+[0m18:17:08.803751 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml
+[0m18:17:08.804751 [info ] [MainThread]: Configuration:
+[0m18:17:08.805752 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:17:08.805752 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:17:08.806752 [info ] [MainThread]: Required dependencies:
+[0m18:17:08.807811 [debug] [MainThread]: Executing "git --help"
+[0m18:17:08.852131 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:17:08.853141 [debug] [MainThread]: STDERR: "b''"
+[0m18:17:08.854136 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:17:08.855131 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:17:08.856130 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:17:08.857133 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "snowflake", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m18:17:08.859129 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml> not found
+
+[0m18:17:08.861131 [debug] [MainThread]: Command `dbt debug` failed at 18:17:08.861131 after 0.16 seconds
+[0m18:17:08.862131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D88B00D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D88A07A800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D88A0786D0>]}
+[0m18:17:08.863130 [debug] [MainThread]: Flushing usage events
+[0m18:25:46.513571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014689E4D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014688E270A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014688E27C40>]}
+
+
+============================== 18:25:46.516557 | 1e8569c1-40b4-4eb0-b1d1-755cd0f4c555 ==============================
+[0m18:25:46.516557 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:25:46.517556 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:25:46.528639 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:25:46.529697 [info ] [MainThread]: python version: 3.10.11
+[0m18:25:46.530708 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:25:46.531708 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:25:46.538784 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m18:25:46.539707 [info ] [MainThread]: Using profiles dir at C:\Users\ELYADATA\.dbt
+[0m18:25:46.540726 [info ] [MainThread]: Using profiles.yml file at C:\Users\ELYADATA\.dbt\profiles.yml
+[0m18:25:46.541719 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml
+[0m18:25:46.542720 [info ] [MainThread]: Configuration:
+[0m18:25:46.543707 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:25:46.544706 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:25:46.545722 [info ] [MainThread]: Required dependencies:
+[0m18:25:46.546709 [debug] [MainThread]: Executing "git --help"
+[0m18:25:46.597069 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:25:46.598083 [debug] [MainThread]: STDERR: "b''"
+[0m18:25:46.599032 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:25:46.601033 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:25:46.602032 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:25:46.603150 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "snowflake", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m18:25:46.604603 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml> not found
+
+[0m18:25:46.606607 [debug] [MainThread]: Command `dbt debug` failed at 18:25:46.606607 after 0.18 seconds
+[0m18:25:46.606607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014689E4D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014688EBA800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014688EB86D0>]}
+[0m18:25:46.607644 [debug] [MainThread]: Flushing usage events
+[0m18:28:23.059852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002102B95D5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002102A936DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002102A937EB0>]}
+
+
+============================== 18:28:23.062927 | eac3fb72-2c74-4fbd-a0d4-fd9f50c68d1c ==============================
+[0m18:28:23.062927 [info ] [MainThread]: Running with dbt=1.8.3
+[0m18:28:23.063853 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:28:23.073852 [info ] [MainThread]: dbt version: 1.8.3
+[0m18:28:23.074935 [info ] [MainThread]: python version: 3.10.11
+[0m18:28:23.075938 [info ] [MainThread]: python path: c:\users\elyadata\appdata\local\programs\python\python310\python.exe
+[0m18:28:23.076964 [info ] [MainThread]: os info: Windows-10-10.0.19042-SP0
+[0m18:28:23.082975 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m18:28:23.083937 [info ] [MainThread]: Using profiles dir at C:\Users\ELYADATA\.dbt
+[0m18:28:23.084936 [info ] [MainThread]: Using profiles.yml file at C:\Users\ELYADATA\.dbt\profiles.yml
+[0m18:28:23.085936 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml
+[0m18:28:23.086936 [info ] [MainThread]: Configuration:
+[0m18:28:23.086936 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:28:23.087943 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:28:23.088937 [info ] [MainThread]: Required dependencies:
+[0m18:28:23.089942 [debug] [MainThread]: Executing "git --help"
+[0m18:28:23.138245 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:28:23.138245 [debug] [MainThread]: STDERR: "b''"
+[0m18:28:23.139245 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:28:23.139734 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:28:23.140737 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:28:23.141737 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "snowflake", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m18:28:23.142738 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ELYADATA\Desktop\dbt_demo\dbt_project.yml> not found
+
+[0m18:28:23.144061 [debug] [MainThread]: Command `dbt debug` failed at 18:28:23.144061 after 0.17 seconds
+[0m18:28:23.145063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002102B95D5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002102A9CA830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002102A9C86A0>]}
+[0m18:28:23.145063 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2024-07-09 09:44:35.328391 | 2a9f1210-6ab4-4c67-80af-0bd0f8f9e0b1 ==============================
+09:44:35.328391 [info ] [MainThread]: Running with dbt=1.1.0
+09:44:35.328391 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_demo', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+09:44:35.328391 [debug] [MainThread]: Tracking: tracking
+09:44:35.353168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224CB5FE950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224CB5FF460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224CB5FE7D0>]}
+09:44:35.353168 [info ] [MainThread]: A project called dbt_demo already exists here.
+09:44:35.354168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224CB5FE9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224CB5FE650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224CB5FE950>]}
+
+
+============================== 2024-07-09 09:45:43.659784 | b57b8745-a85b-4351-a44c-3620cf3562a8 ==============================
+09:45:43.659784 [info ] [MainThread]: Running with dbt=1.1.0
+09:45:43.659784 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:45:43.659784 [debug] [MainThread]: Tracking: tracking
+09:45:43.689503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C51F8EE920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C51F8EF5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C51F8EE770>]}
+09:45:43.747467 [debug] [MainThread]: Executing "git --help"
+09:45:43.798949 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:45:43.798949 [debug] [MainThread]: STDERR: "b''"
+09:45:43.814036 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:45:43.814036 [debug] [MainThread]: Using postgres connection "debug"
+09:45:43.814036 [debug] [MainThread]: On debug: select 1 as id
+09:45:43.814036 [debug] [MainThread]: Opening a new connection, currently in state init
+09:45:43.898910 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:45:43.898910 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:45:43.898910 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:45:43.898910 [debug] [MainThread]: On debug: No close available on handle
+09:45:43.898910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C51F9B5D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C51F9B5E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C51F9BDAE0>]}
+09:45:44.465295 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 09:46:59.948947 | ff925291-44a2-4ea1-943d-c17509939121 ==============================
+09:46:59.948947 [info ] [MainThread]: Running with dbt=1.1.0
+09:46:59.948947 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:46:59.948947 [debug] [MainThread]: Tracking: tracking
+09:46:59.969722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002469B4DEA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002469B4DF5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002469B4DE830>]}
+09:47:00.034294 [debug] [MainThread]: Executing "git --help"
+09:47:00.068886 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:47:00.068886 [debug] [MainThread]: STDERR: "b''"
+09:47:00.068886 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:47:00.068886 [debug] [MainThread]: Using postgres connection "debug"
+09:47:00.068886 [debug] [MainThread]: On debug: select 1 as id
+09:47:00.081791 [debug] [MainThread]: Opening a new connection, currently in state init
+09:47:00.166881 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:47:00.166881 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:47:00.166881 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:47:00.166881 [debug] [MainThread]: On debug: No close available on handle
+09:47:00.166881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002469B5A5D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002469B5A5E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002469B5ADB10>]}
+09:47:00.732202 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 09:48:34.432216 | 82005ddb-f29c-48ec-a679-2e78f6c3b529 ==============================
+09:48:34.432216 [info ] [MainThread]: Running with dbt=1.1.0
+09:48:34.432216 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:48:34.432216 [debug] [MainThread]: Tracking: tracking
+09:48:34.452226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFB5DCE920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFB5DCF5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFB5DCE770>]}
+09:48:34.518784 [debug] [MainThread]: Executing "git --help"
+09:48:34.569222 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:48:34.569222 [debug] [MainThread]: STDERR: "b''"
+09:48:34.569222 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:48:34.569222 [debug] [MainThread]: Using postgres connection "debug"
+09:48:34.569222 [debug] [MainThread]: On debug: select 1 as id
+09:48:34.569222 [debug] [MainThread]: Opening a new connection, currently in state init
+09:48:34.668248 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:48:34.669248 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:48:34.669248 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:48:34.669248 [debug] [MainThread]: On debug: No close available on handle
+09:48:34.673249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFB5E95D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFB5E95E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFB5E9DAE0>]}
+09:48:35.263373 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 09:49:46.019194 | 35d27805-c5ec-481b-98c3-0d1b476b017e ==============================
+09:49:46.019194 [info ] [MainThread]: Running with dbt=1.1.0
+09:49:46.019194 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:49:46.019194 [debug] [MainThread]: Tracking: tracking
+09:49:46.051805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5445DE920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5445DF5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5445DE830>]}
+09:49:46.106123 [debug] [MainThread]: Executing "git --help"
+09:49:46.154755 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:49:46.154755 [debug] [MainThread]: STDERR: "b''"
+09:49:46.154755 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:49:46.154755 [debug] [MainThread]: Using postgres connection "debug"
+09:49:46.154755 [debug] [MainThread]: On debug: select 1 as id
+09:49:46.154755 [debug] [MainThread]: Opening a new connection, currently in state init
+09:49:46.241175 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:49:46.251942 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:49:46.251942 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:49:46.252947 [debug] [MainThread]: On debug: No close available on handle
+09:49:46.254182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5446A5D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5446A5E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5446ADB10>]}
+09:49:46.812816 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 09:50:32.817877 | 45070eb6-f6a4-43e5-b14f-c31cc0db3354 ==============================
+09:50:32.817877 [info ] [MainThread]: Running with dbt=1.1.0
+09:50:32.817877 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:50:32.817877 [debug] [MainThread]: Tracking: tracking
+09:50:32.838685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B5E1DE950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B5E1DF5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B5E1DE7A0>]}
+09:50:32.902913 [debug] [MainThread]: Executing "git --help"
+09:50:32.952925 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:50:32.953500 [debug] [MainThread]: STDERR: "b''"
+09:50:32.953500 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:50:32.953500 [debug] [MainThread]: Using postgres connection "debug"
+09:50:32.953500 [debug] [MainThread]: On debug: select 1 as id
+09:50:32.953500 [debug] [MainThread]: Opening a new connection, currently in state init
+09:50:33.053826 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:50:33.053826 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:50:33.053826 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:50:33.053826 [debug] [MainThread]: On debug: No close available on handle
+09:50:33.053826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B5E2A5DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B5E2A5FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B5E2ADAE0>]}
+09:50:33.643010 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 09:52:27.856368 | a09cb652-9d3f-4ab2-93c2-02041d068fb8 ==============================
+09:52:27.856368 [info ] [MainThread]: Running with dbt=1.1.0
+09:52:27.856368 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:52:27.856368 [debug] [MainThread]: Tracking: tracking
+09:52:27.873315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5592BEAA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5592BF580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5592BE770>]}
+09:52:27.940890 [debug] [MainThread]: Executing "git --help"
+09:52:27.992688 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:52:27.992688 [debug] [MainThread]: STDERR: "b''"
+09:52:27.992688 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:52:27.992688 [debug] [MainThread]: Using postgres connection "debug"
+09:52:27.992688 [debug] [MainThread]: On debug: select 1 as id
+09:52:27.992688 [debug] [MainThread]: Opening a new connection, currently in state init
+09:52:28.099890 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:52:28.099890 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:52:28.099890 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:52:28.100899 [debug] [MainThread]: On debug: No close available on handle
+09:52:28.103404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B559389CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B559389C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B55938DAE0>]}
+09:52:28.725659 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 09:53:31.692729 | e78f2102-de02-46f2-b325-fd3a27f08f71 ==============================
+09:53:31.692729 [info ] [MainThread]: Running with dbt=1.1.0
+09:53:31.692729 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': True, 'which': 'debug', 'indirect_selection': 'eager'}
+09:53:31.692729 [debug] [MainThread]: Tracking: tracking
+09:53:31.713155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C8AB6EA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C8AB6E650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C8AB6E980>]}
+09:53:31.713155 [info ] [MainThread]: To view your profiles.yml file, run:
+
+start C:\Users\ELYADATA\.dbt
+09:53:31.713155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C8AB6E650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C8AB6E980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C8AB6E830>]}
+
+
+============================== 2024-07-09 09:53:48.497714 | 2e47ee1c-f3db-4269-ae53-7f64b1491d17 ==============================
+09:53:48.497714 [info ] [MainThread]: Running with dbt=1.1.0
+09:53:48.497714 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:53:48.497714 [debug] [MainThread]: Tracking: tracking
+09:53:48.533309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB8444EA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB8444F5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB8444E830>]}
+09:53:48.592369 [debug] [MainThread]: Executing "git --help"
+09:53:48.644229 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:53:48.644229 [debug] [MainThread]: STDERR: "b''"
+09:53:48.644229 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:53:48.644229 [debug] [MainThread]: Using postgres connection "debug"
+09:53:48.644229 [debug] [MainThread]: On debug: select 1 as id
+09:53:48.644229 [debug] [MainThread]: Opening a new connection, currently in state init
+09:53:48.742017 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:53:48.742017 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:53:48.742017 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:53:48.742017 [debug] [MainThread]: On debug: No close available on handle
+09:53:48.742017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB84515D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB84515E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB8451DAE0>]}
+09:53:49.367296 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 09:55:22.507610 | 97285915-8043-4e94-8685-86062c743be7 ==============================
+09:55:22.507610 [info ] [MainThread]: Running with dbt=1.1.0
+09:55:22.507610 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:55:22.507610 [debug] [MainThread]: Tracking: tracking
+09:55:22.528816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276A4F4E950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276A4F4F5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276A4F4E860>]}
+09:55:22.594183 [debug] [MainThread]: Executing "git --help"
+09:55:22.646416 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:55:22.647415 [debug] [MainThread]: STDERR: "b''"
+09:55:22.675877 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:55:22.676936 [debug] [MainThread]: Using postgres connection "debug"
+09:55:22.676936 [debug] [MainThread]: On debug: select 1 as id
+09:55:22.676936 [debug] [MainThread]: Opening a new connection, currently in state init
+09:55:22.762014 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:55:22.762014 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:55:22.762014 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:55:22.762014 [debug] [MainThread]: On debug: No close available on handle
+09:55:22.762014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276A5019DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276A5019FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276A501DB10>]}
+09:55:23.529459 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 09:57:13.090346 | f4e23440-8606-40da-bb95-b18fbfcd8775 ==============================
+09:57:13.090346 [info ] [MainThread]: Running with dbt=1.1.0
+09:57:13.090346 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+09:57:13.090346 [debug] [MainThread]: Tracking: tracking
+09:57:13.114076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC652AEA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC652AF4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC652AE7D0>]}
+09:57:13.165392 [debug] [MainThread]: Executing "git --help"
+09:57:13.228096 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+09:57:13.229096 [debug] [MainThread]: STDERR: "b''"
+09:57:13.231095 [debug] [MainThread]: Acquiring new postgres connection "debug"
+09:57:13.232095 [debug] [MainThread]: Using postgres connection "debug"
+09:57:13.232095 [debug] [MainThread]: On debug: select 1 as id
+09:57:13.232095 [debug] [MainThread]: Opening a new connection, currently in state init
+09:57:13.313152 [debug] [MainThread]: Postgres adapter: Got an error when attempting to open a postgres connection: ''
+09:57:13.313152 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+09:57:13.313152 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+09:57:13.313152 [debug] [MainThread]: On debug: No close available on handle
+09:57:13.313152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC65375AB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC65375C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC6537DB10>]}
+09:57:14.525365 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 10:20:30.777638 | a3b4969a-e702-4576-b967-94006f25d080 ==============================
+10:20:30.777638 [info ] [MainThread]: Running with dbt=1.1.0
+10:20:30.778639 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+10:20:30.778639 [debug] [MainThread]: Tracking: tracking
+10:20:30.788780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8A858E890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8A858F5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8A858E980>]}
+10:20:30.857371 [debug] [MainThread]: Executing "git --help"
+10:20:31.152526 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+10:20:31.152747 [debug] [MainThread]: STDERR: "b''"
+10:20:31.152747 [debug] [MainThread]: Acquiring new postgres connection "debug"
+10:20:31.152747 [debug] [MainThread]: Using postgres connection "debug"
+10:20:31.152747 [debug] [MainThread]: On debug: select 1 as id
+10:20:31.152747 [debug] [MainThread]: Opening a new connection, currently in state init
+10:20:31.236818 [debug] [MainThread]: SQL status: SELECT 1 in 0.08 seconds
+10:20:31.236818 [debug] [MainThread]: On debug: Close
+10:20:31.236818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8A8655CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8A8655DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8A865ECE0>]}
+10:20:31.815738 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-09 10:22:16.523604 | 5d84e551-7581-4a27-aa61-174750953187 ==============================
+10:22:16.523604 [info ] [MainThread]: Running with dbt=1.1.0
+10:22:16.523850 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+10:22:16.523850 [debug] [MainThread]: Tracking: tracking
+10:22:16.538438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B92E980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B92F610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B92E6E0>]}
+10:22:27.918242 [info ] [MainThread]: A project called dbt_demo already exists here.
+10:22:27.918242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B92E4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B92E5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B92E6E0>]}
+
+
+============================== 2024-07-09 10:22:38.915750 | e7312d10-3705-4884-8ad5-1c196ac655b2 ==============================
+10:22:38.915750 [info ] [MainThread]: Running with dbt=1.1.0
+10:22:38.915750 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ELYADATA\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+10:22:38.915750 [debug] [MainThread]: Tracking: tracking
+10:22:38.940397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE414EB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE414F610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE414E800>]}
+10:22:38.992156 [debug] [MainThread]: Executing "git --help"
+10:22:39.047705 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+10:22:39.047705 [debug] [MainThread]: STDERR: "b''"
+10:22:39.047705 [debug] [MainThread]: Acquiring new postgres connection "debug"
+10:22:39.047705 [debug] [MainThread]: Using postgres connection "debug"
+10:22:39.047705 [debug] [MainThread]: On debug: select 1 as id
+10:22:39.047705 [debug] [MainThread]: Opening a new connection, currently in state init
+10:22:39.142158 [debug] [MainThread]: SQL status: SELECT 1 in 0.09 seconds
+10:22:39.143211 [debug] [MainThread]: On debug: Close
+10:22:39.144147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE4215CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE4215F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE421ECE0>]}
+10:22:39.724609 [debug] [MainThread]: Connection 'debug' was properly closed.
