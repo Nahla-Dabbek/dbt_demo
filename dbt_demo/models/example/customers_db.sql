@@ -9,16 +9,18 @@
 
 {{ config(materialized='table') }}
 
-with source_data as (
+with customers as (
 
-    select 1 as id
-    union all
-    select null as id
+select 
+    customer_id,
+    CONCAT(first_name, ' ', last_name) as full_name,
+    credit_provider
+from customers
 
 )
 
 select *
-from source_data
+from customers
 
 /*
     Uncomment the line below to remove records with null `id` values
